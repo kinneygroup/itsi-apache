@@ -21,137 +21,40 @@ Apache monitoring encompasses several specialized services, each targeting speci
 
 1. Apache Web Server
     * Description: The primary component responsible for handling HTTP requests and serving web content.
-    * Source: [Datadog](https://www.datadoghq.com/blog/monitoring-apache-web-server-performance/)
 2. Request Handling
     * Description: Manages the processing of incoming HTTP requests.
-    * Source: [Sematext](https://sematext.com/blog/apache-monitoring/)
 3. Resource Management
     * Description: Manages the allocation and usage of server resources such as CPU, memory, and disk.
-    * Source: [Site24x7](https://www.site24x7.com/learn/web-server/guide-to-monitoring-apache-performance.html)
 4. Logging and Monitoring
     * Description: Handles the logging of server activities and monitoring of server performance.
-    * Source: [Loggly](https://www.loggly.com/ultimate-guide/apache-logging-basics/)
 5. Multi-Processing Modules (MPMs)
     * Description: Manages the configuration and performance of different MPMs like prefork, worker, and event.
-    * Source: [Datadog](https://www.datadoghq.com/blog/monitoring-apache-web-server-performance/)
-6. Request Metrics
-    * Description: Tracks various metrics related to the processing of HTTP requests.
-    * Source: [Sematext](https://sematext.com/blog/apache-monitoring/)
-7. CPU Usage
-    * Description: Monitors the CPU utilization of the server.
-    * Source: [Site24x7](https://www.site24x7.com/learn/web-server/guide-to-monitoring-apache-performance.html)
-8. Memory Usage
-    * Description: Monitors the memory utilization of the server.
-    * Source: [Site24x7](https://www.site24x7.com/learn/web-server/guide-to-monitoring-apache-performance.html)
-9. Disk I/O and Usage
-    * Description: Monitors the disk read/write operations and disk space usage.
-    * Source: [Site24x7](https://www.site24x7.com/learn/web-server/guide-to-monitoring-apache-performance.html)
-10. Access Logs
-    * Description: Logs incoming requests to the server.
-    * Source: [Loggly](https://www.loggly.com/ultimate-guide/apache-logging-basics/)
-11. Error Logs
-    * Description: Logs errors encountered by the server.
-    * Source: [Loggly](https://www.loggly.com/ultimate-guide/apache-logging-basics/)
-12. Log Rotation
-    * Description: Manages the rotation of log files to prevent excessive disk space usage.
-    * Source: [Loggly](https://www.loggly.com/ultimate-guide/apache-logging-basics/)
-13. Prefork MPM
-    * Description: Manages the configuration and performance of the prefork MPM.
-    * Source: [Datadog](https://www.datadoghq.com/blog/monitoring-apache-web-server-performance/)
-14. Worker MPM
-    * Description: Manages the configuration and performance of the worker MPM.
-    * Source: [Datadog](https://www.datadoghq.com/blog/monitoring-apache-web-server-performance/)
-15. Event MPM
-    * Description: Manages the configuration and performance of the event MPM.
-    * Source: [Datadog](https://www.datadoghq.com/blog/monitoring-apache-web-server-performance/)
-16. Requests per Second
-    * Description: Measures the number of requests handled by the server per second.
-    * Source: [Sematext](https://sematext.com/blog/apache-monitoring/)
-17. Request Latency
-    * Description: Measures the time taken to process requests.
-    * Source: [Sematext](https://sematext.com/blog/apache-monitoring/)
-18. HTTP Status Codes
-    * Description: Tracks the HTTP status codes returned by the server.
-    * Source: [Sematext](https://sematext.com/blog/apache-monitoring/)
 
 ### KPIs
 Each service utilizes specific KPIs to measure its effectiveness:
 
 1. Requests per Second
     * Description: Measures the number of requests handled by the server per second.
-    * Source: [Sematext](https://sematext.com/blog/apache-monitoring/)
 2. Request Latency
     * Description: Measures the time taken to process requests.
-    * Source: [Sematext](https://sematext.com/blog/apache-monitoring/)
-3. HTTP Status Codes
-    * Description: Tracks the HTTP status codes returned by the server.
-    * Source: [Sematext](https://sematext.com/blog/apache-monitoring/)
+3. HTTP Errors
+    * Description: Tracks the HTTP errors returned by the server.
 4. CPU Usage
     * Description: Monitors the CPU utilization of the server.
-    * Source: [Site24x7](https://www.site24x7.com/learn/web-server/guide-to-monitoring-apache-performance.html)
 5. Memory Usage
     * Description: Monitors the memory utilization of the server.
-    * Source: [Site24x7](https://www.site24x7.com/learn/web-server/guide-to-monitoring-apache-performance.html)
 6. Disk I/O and Usage
     * Description: Monitors the disk read/write operations and disk space usage.
-    * Source: [Site24x7](https://www.site24x7.com/learn/web-server/guide-to-monitoring-apache-performance.html)
 7. Access Logs
     * Description: Logs incoming requests to the server.
-    * Source: [Loggly](https://www.loggly.com/ultimate-guide/apache-logging-basics/)
 8. Error Logs
     * Description: Logs errors encountered by the server.
-    * Source: [Loggly](https://www.loggly.com/ultimate-guide/apache-logging-basics/)
-9. Log Rotation
-    * Description: Manages the rotation of log files to prevent excessive disk space usage.
-    * Source: [Loggly](https://www.loggly.com/ultimate-guide/apache-logging-basics/)
-10. Prefork MPM
+9. Prefork MPM
     * Description: Manages the configuration and performance of the prefork MPM.
-    * Source: [Datadog](https://www.datadoghq.com/blog/monitoring-apache-web-server-performance/)
-11. Worker MPM
+10. Worker MPM
     * Description: Manages the configuration and performance of the worker MPM.
-    * Source: [Datadog](https://www.datadoghq.com/blog/monitoring-apache-web-server-performance/)
-12. Event MPM
+11. Event MPM
     * Description: Manages the configuration and performance of the event MPM.
-    * Source: [Datadog](https://www.datadoghq.com/blog/monitoring-apache-web-server-performance/)
-13. CPU Utilization
-    * Description: Monitors the CPU utilization of the server.
-    * Source: [Site24x7](https://www.site24x7.com/learn/web-server/guide-to-monitoring-apache-performance.html)
-14. Memory Utilization
-    * Description: Monitors the memory utilization of the server.
-    * Source: [Site24x7](https://www.site24x7.com/learn/web-server/guide-to-monitoring-apache-performance.html)
-15. Disk Read/Write Operations
-    * Description: Monitors the disk read/write operations.
-    * Source: [Site24x7](https://www.site24x7.com/learn/web-server/guide-to-monitoring-apache-performance.html)
-16. Disk Space Usage
-    * Description: Monitors the disk space usage.
-    * Source: [Site24x7](https://www.site24x7.com/learn/web-server/guide-to-monitoring-apache-performance.html)
-17. Incoming Requests
-    * Description: Logs incoming requests to the server.
-    * Source: [Loggly](https://www.loggly.com/ultimate-guide/apache-logging-basics/)
-18. Server Errors
-    * Description: Logs errors encountered by the server.
-    * Source: [Loggly](https://www.loggly.com/ultimate-guide/apache-logging-basics/)
-19. Log File Rotation
-    * Description: Manages the rotation of log files to prevent excessive disk space usage.
-    * Source: [Loggly](https://www.loggly.com/ultimate-guide/apache-logging-basics/)
-20. Child Processes
-    * Description: Manages the configuration and performance of the prefork MPM.
-    * Source: [Datadog](https://www.datadoghq.com/blog/monitoring-apache-web-server-performance/)
-21. Threads per Child Process
-    * Description: Manages the configuration and performance of the worker MPM.
-    * Source: [Datadog](https://www.datadoghq.com/blog/monitoring-apache-web-server-performance/)
-22. Listener Threads
-    * Description: Manages the configuration and performance of the event MPM.
-    * Source: [Datadog](https://www.datadoghq.com/blog/monitoring-apache-web-server-performance/)
-23. Request Rate
-    * Description: Measures the number of requests handled by the server per second.
-    * Source: [Sematext](https://sematext.com/blog/apache-monitoring/)
-24. Processing Time
-    * Description: Measures the time taken to process requests.
-    * Source: [Sematext](https://sematext.com/blog/apache-monitoring/)
-25. Status Code Tracking
-    * Description: Tracks the HTTP status codes returned by the server.
-    * Source: [Sematext](https://sematext.com/blog/apache-monitoring/)
 
 ### Relationships
 #### Dependencies:
@@ -190,7 +93,7 @@ For more information about Kinney Group's Splunk Products, visit our [website](h
 
 | Version | Date  | Description             |
 |---------|-------|-------------------------|
-| -.-.-   | -/-/- | Initial Preview Release |
+| 0.1.0   | 6/3/24 | Initial Preview Release |
 
 ## Considerations:
 
